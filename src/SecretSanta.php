@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace evo\ssanta;
+namespace evolutionlabs\ssanta;
 
 use yii\base\Module;
 use evo\ssanta\{
@@ -16,12 +16,12 @@ class SecretSanta extends Module
     /**
      * @var string
      */
-    public $emailTemplate = '@yii/evo/ssanta/mail/notify-giver';
+    public $emailTemplate = '@evo/ssanta/mail/notify-giver';
 
     /**
      * @var string
      */
-    public $logo = '@yii/evo/ssanta/img/logo-carturesti.png';
+    public $logo = '@evo/ssanta/img/logo-carturesti.png';
 
     /**
      * @var string

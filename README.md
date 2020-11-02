@@ -28,6 +28,6 @@ Run the migrations:
 ```php 
 yii migrate/up --migrationPath=@evo/ssanta/console/migrations
 ```
-Access at /secret-santa/lists/index:
+Access at: /secret-santa/lists/index
 
 
