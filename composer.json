@@ -1,5 +1,5 @@
 {
-  "name": "evo/yii2-secret-santa",
+  "name": "evolutionlabs/yii2-secret-santa",
   "type": "yii2-extension",
   "minimum-stability": "dev",
   "description": "Module to create secret santa pairs from a list and send emails",
