@@ -16,12 +16,12 @@ class SecretSanta extends Module
     /**
      * @var string
      */
-    public $emailTemplate = '@evo/ssanta/mail/notify-giver';
+    public $emailTemplate = '@evolutionlabs/ssanta/mail/notify-giver';
 
     /**
      * @var string
      */
-    public $logo = '@evo/ssanta/img/logo-carturesti.png';
+    public $logo = '@evolutionlabs/ssanta/img/logo-carturesti.png';
 
     /**
      * @var string
