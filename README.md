@@ -16,9 +16,9 @@ Add the component to your main.php.
 ```php
 'modules' => [
         'secret-santa' => [
-            'class'                   => \evo\ssanta\SecretSanta::class,
+            'class'                   => \evolutionlabs\ssanta\SecretSanta::class,
             'useDefaultEmailSolution' => true,
-            'emailTemplate'           => '@ssanta/mail/notify-giver',
+            'emailTemplate'           => '@evolutionlabs/ssanta/mail/notify-giver',
             'logo'                    => '/img/logos/logo-carturesti.png'
         ]
     ];
@@ -26,7 +26,7 @@ Add the component to your main.php.
 Run the migrations:
 
 ```php 
-yii migrate/up --migrationPath=@evo/ssanta/console/migrations
+yii migrate/up --migrationPath=@evolutionlabs/ssanta/console/migrations
 ```
 Access at: /secret-santa/lists/index
 
