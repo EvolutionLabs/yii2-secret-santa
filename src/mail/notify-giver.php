@@ -1,7 +1,7 @@
 <?php
-/** @var \evo\ssanta\models\SecretSantaListMember $giver */
-/** @var \evo\ssanta\models\SecretSantaListMember $receiver */
-/** @var \evo\ssanta\models\SecretSantaList $list */
+/** @var \evolutionlabs\ssanta\models\SecretSantaListMember $giver */
+/** @var \evolutionlabs\ssanta\models\SecretSantaListMember $receiver */
+/** @var \evolutionlabs\ssanta\models\SecretSantaList $list */
 
 ?>
 

@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace evo\ssanta\jobs;
+namespace evolutionlabs\ssanta\jobs;
 
 use yii\base\BaseObject;
 use yii\queue\JobInterface;
-use evo\ssanta\models\SecretSantaListPair;
+use evolutionlabs\ssanta\models\SecretSantaListPair;
 
 /**
  * Class SecretSantaListSentNotifyGiver
- * @package evo\ssanta\jobs
+ * @package evolutionlabs\ssanta\jobs
  */
 class SecretSantaListSentNotifyGiver extends BaseObject implements JobInterface
 {

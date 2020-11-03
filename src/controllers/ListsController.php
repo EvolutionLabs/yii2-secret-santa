@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace evo\ssanta\controllers;
+namespace evolutionlabs\ssanta\controllers;
 
 use Yii;
 use yii\helpers\Html;
@@ -9,7 +9,7 @@ use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
 use yii\base\Model;
 use frontend\yii\web\Controller;
-use evo\ssanta\models\{
+use evolutionlabs\ssanta\models\{
     SecretSantaList,
     SecretSantaListSearch,
     SecretSantaListHandler,
@@ -19,7 +19,7 @@ use evo\ssanta\models\{
 
 /**
  * Class ListsController
- * @package evo\ssanta\controllers
+ * @package evolutionlabs\ssanta\controllers
  */
 class ListsController extends Controller
 {

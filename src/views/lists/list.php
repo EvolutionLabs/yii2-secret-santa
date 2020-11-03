@@ -27,7 +27,7 @@ use yii\widgets\Pjax;
                 [
                     'label' => 'Members',
                     'format'    => 'raw',
-                    'value'     => function(\evo\ssanta\models\SecretSantaList $model) {
+                    'value'     => function(\evolutionlabs\ssanta\models\SecretSantaList $model) {
                         return implode('<br />', array_slice(array_values(ArrayHelper::map($model->members, 'id', 'email')), 0, 5));
                     },
                 ],
@@ -45,7 +45,7 @@ use yii\widgets\Pjax;
                             ]);
                         },
                         'send' => function ($url, $model, $key) {
-                            if ($model->status !== \evo\ssanta\models\SecretSantaList::STATUS_READY) {
+                            if ($model->status !== \evolutionlabs\ssanta\models\SecretSantaList::STATUS_READY) {
                                 return '';
                             }
                             return Html::a('<i class="fa fa-envelope"></i>', $url, [
@@ -58,7 +58,7 @@ use yii\widgets\Pjax;
                             ]);
                         },
                         'pairs' => function ($url, $model, $key) {
-                            if ($model->status === \evo\ssanta\models\SecretSantaList::STATUS_DRAFT) {
+                            if ($model->status === \evolutionlabs\ssanta\models\SecretSantaList::STATUS_DRAFT) {
                                 return '';
                             }
                             return Html::a('<i class="fa fa-users"></i>' , $url, [

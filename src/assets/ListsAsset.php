@@ -1,6 +1,6 @@
 <?php
 
-namespace evo\ssanta\assets;
+namespace evolutionlabs\ssanta\assets;
 
 use yii\bootstrap4\BootstrapAsset;
 use yii\web\AssetBundle;

@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 
-namespace evo\ssanta\models;
+namespace evolutionlabs\ssanta\models;
 
 
 use common\models\User;
@@ -11,7 +11,7 @@ use yii\helpers\Html;
 
 /**
  * Class SecretSantaListHandler
- * @package evo\ssanta\models
+ * @package evolutionlabs\ssanta\models
  */
 class SecretSantaListHandler extends Model
 {

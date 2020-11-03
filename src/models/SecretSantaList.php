@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace evo\ssanta\models;
+namespace evolutionlabs\ssanta\models;
 
 use Yii;
 use common\models\User;
-use evo\ssanta\yii\base\Event;
+use evolutionlabs\ssanta\yii\base\Event;
 
 /**
  * This is the model class for table "{{%secret_santa_list}}".

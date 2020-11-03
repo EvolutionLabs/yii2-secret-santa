@@ -3,13 +3,13 @@
 namespace evolutionlabs\ssanta;
 
 use yii\base\Module;
-use evo\ssanta\{
+use evolutionlabs\ssanta\{
     jobs\SecretSantaListSentNotifyGiver, models\SecretSantaList
 };
 
 /**
  * Class SecretSanta
- * @package evo\ssanta
+ * @package evolutionlabs\ssanta
  */
 class SecretSanta extends Module
 {
@@ -36,7 +36,7 @@ class SecretSanta extends Module
     /**
      * @var string
      */
-    public $controllerNamespace = 'evo\ssanta\controllers';
+    public $controllerNamespace = 'evolutionlabs\ssanta\controllers';
 
     /**
      * @inheritdoc

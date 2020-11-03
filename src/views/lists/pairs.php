@@ -24,14 +24,14 @@ use yii\widgets\Pjax;
                 [
                     'label' => 'Givers',
                     'format'    => 'raw',
-                    'value'     => function(\evo\ssanta\models\SecretSantaListPair $model) {
+                    'value'     => function(\evolutionlabs\ssanta\models\SecretSantaListPair $model) {
                         return !empty($model->giver) ? $model->giver->getDisplayName() : '';
                     },
                 ],
                 [
                     'label' => 'Receivers',
                     'format'    => 'raw',
-                    'value'     => function(\evo\ssanta\models\SecretSantaListPair $model) {
+                    'value'     => function(\evolutionlabs\ssanta\models\SecretSantaListPair $model) {
                         return !empty($model->receiver) ? $model->receiver->getDisplayName() : '';
                     },
                 ],
