@@ -7,9 +7,18 @@ This module is creating pairs from a list of email and is sending emails to the 
 
 
 ```shell script
-composer require evo/yii2-secret-santa
+composer require evolutionlabs/yii2-secret-santa
 ```
 
+Add this to your composer.json
+``` 
+"repositories": [
+   {
+       "type": "vcs",
+       "url": "git@github.com:EvolutionLabs/yii2-secret-santa.git"
+   }
+]
+```
 #### Usage
 
 Add the component to your main.php.
