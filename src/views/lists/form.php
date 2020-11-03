@@ -2,9 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use frontend\modules\{
-    ssanta\models\SecretSantaList,
-    ssanta\assets\ListsAsset
+use evolutionlabs\ssanta\{
+    assets\ListsAsset,
+    models\SecretSantaList,
+    models\SecretSantaListMember
 };
 
 /**
@@ -21,8 +22,8 @@ ListsAsset::register($this)
 
 /**
  * @var yii\web\View                   $this
- * @var SecretSantaList $model
- * @var string                         $title
+ * @var SecretSantaList                $model
+ * @var SecretSantaListMember[]        $members
  */
 
 ?>
