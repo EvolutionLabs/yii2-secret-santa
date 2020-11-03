@@ -13,7 +13,7 @@ class ListsAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@frontend/modules/ssanta/assets/source';
+    public $sourcePath = '@evolutionlabs/ssanta/assets/source';
 
     public $js = [
         'js/lists.js'
