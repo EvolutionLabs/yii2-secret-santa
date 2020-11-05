@@ -8,7 +8,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
 use yii\base\Model;
-use frontend\yii\web\Controller;
+use yii\web\Controller;
 use evolutionlabs\ssanta\models\{
     SecretSantaList,
     SecretSantaListSearch,
