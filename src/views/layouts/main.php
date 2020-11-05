@@ -26,7 +26,7 @@ use yii\helpers\Html;
     <div class="container">
         <div class="row">
             <div class="col-lg-12" id="notify-container">
-                <?php echo notify()->show();?>
+
             </div>
         </div>
         <?= $content ?>

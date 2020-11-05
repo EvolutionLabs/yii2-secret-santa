@@ -279,12 +279,10 @@ class ListsController extends Controller
         ]);
         $handler->run();
         if ($handler->hasErrors()) {
-            notify()->addError(Html::errorSummary($handler));
-            //Yii::$app->session->setFlash('error', Html::errorSummary($handler));
+            Yii::$app->session->setFlash('error', Html::errorSummary($handler));
         } else {
-            notify()->addSuccess(t('app', 'Secret Santa pairs created with success'));
-            notify()->addInfo($handler->getFromToEmails());
-            //Yii::$app->session->setFlash('success', t('app', 'Secret Santa pairs created with success'));
+            Yii::$app->session->setFlash('success', t('app', 'Secret Santa pairs created with success'));
+            Yii::$app->session->setFlash('info', $handler->getFromToEmails());
         }
         return $this->redirect(['index']);
     }
@@ -299,9 +297,9 @@ class ListsController extends Controller
         $model = $this->findModel((int)$id);
 
         if (!$model->send()) {
-            notify()->addError(t('app', 'The list was not queued for sending'));
+            Yii::$app->session->setFlash('error', t('app', 'The list was not queued for sending'));
         } else {
-            notify()->addSuccess(t('app', 'The list was queued for sending successfully'));
+            Yii::$app->session->setFlash('success', t('app', 'The list was queued for sending successfully'));
         }
         return $this->redirect(['index']);
     }
