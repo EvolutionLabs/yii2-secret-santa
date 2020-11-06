@@ -2,7 +2,6 @@
 
 namespace evolutionlabs\ssanta\assets;
 
-use yii\bootstrap4\BootstrapAsset;
 use yii\web\AssetBundle;
 
 /**
@@ -17,9 +16,5 @@ class ListsAsset extends AssetBundle
 
     public $js = [
         'js/lists.js'
-    ];
-
-    public $depends = [
-        BootstrapAsset::class
     ];
 }
