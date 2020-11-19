@@ -24,6 +24,7 @@ use yii\widgets\Pjax;
             'columns'       => [
                 'name',
                 'status',
+                'budget',
                 [
                     'label' => 'Members',
                     'format'    => 'raw',

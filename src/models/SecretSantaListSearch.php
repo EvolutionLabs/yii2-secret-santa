@@ -17,7 +17,7 @@ class SecretSantaListSearch extends SecretSantaList
     public function rules()
     {
         return [
-            [['name', 'id', 'user_id'], 'safe'],
+            [['name', 'id', 'user_id', 'budget'], 'safe'],
         ];
     }
 
@@ -59,7 +59,8 @@ class SecretSantaListSearch extends SecretSantaList
         // grid filtering conditions
         $query->andFilterWhere([
             'id'      => $this->id,
-            'user_id' => $this->user_id
+            'user_id' => $this->user_id,
+            'budget'  => $this->budget
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name]);

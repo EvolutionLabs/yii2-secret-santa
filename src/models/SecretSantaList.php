@@ -13,6 +13,7 @@ use evolutionlabs\ssanta\yii\base\Event;
  * @property int $user_id
  * @property string $status
  * @property string $name
+ * @property string $budget
  *
  * @property User $user
  * @property SecretSantaListMember[] $members
@@ -41,7 +42,7 @@ class SecretSantaList extends \yii\db\ActiveRecord
     {
         return [
             [['user_id'], 'required'],
-            [['user_id'], 'integer'],
+            [['user_id', 'budget'], 'integer'],
             [['status'], 'string'],
             [['name'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['user_id' => 'id']],
@@ -58,6 +59,7 @@ class SecretSantaList extends \yii\db\ActiveRecord
             'user_id' => Yii::t('app', 'User'),
             'status'  => Yii::t('app', 'Status'),
             'name'    => Yii::t('app', 'Name'),
+            'budget'  => Yii::t('app', 'Budget'),
         ];
     }
 
