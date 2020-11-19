@@ -51,7 +51,7 @@ ListsAsset::register($this)
                     <?php echo $form->field($model, 'name')->textInput(['maxlength' => true]); ?>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <?php echo $form->field($model, 'budget')->input(['type' => 'number']); ?>
+                    <?php echo $form->field($model, 'budget')->input('number'); ?>
                 </div>
             </div>
             <div class="card list-members">
