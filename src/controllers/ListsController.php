@@ -38,6 +38,18 @@ class ListsController extends Controller
             ],
         ]);
     }
+	
+	
+    public function init()
+    {
+        $searchModel          = new SecretSantaListSearch();
+        $searchModel->user_id = (int)Yii::$app->user->identity->id;
+        $dataProvider         = $searchModel->search();
+        if($dataProvider->totalCount == 0) {
+            $this->defaultAction = 'create';
+        }
+        parent::init();
+    }
 
     /**
      * @return string
