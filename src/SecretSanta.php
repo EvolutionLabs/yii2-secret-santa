@@ -37,6 +37,11 @@ class SecretSanta extends Module
      * @var string
      */
     public $controllerNamespace = 'evolutionlabs\ssanta\controllers';
+    
+    /**
+     * @inheritdoc
+     */
+    public $defaultRoute = 'lists';
 
     /**
      * @inheritdoc
